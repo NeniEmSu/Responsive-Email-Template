@@ -31,7 +31,7 @@ td {
 }
 
 p {
-    Margin: 0 0 20px;
+    margin: 0;
 }
 
 ul {
@@ -130,24 +130,36 @@ img.logo {
     padding: 0;
 }
 
-.social li {
+.social p {
     display: inline-block;
-}
-
-.social li img {
-    max-width: 25px;
-    Margin-bottom: 0;
-    margin: 0 10px;
-    padding-bottom: 0;
+    margin: 0 auto;
 }
 
 .social p {
-    display: flex;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .social p img {
+    max-width: 40px;
+    Margin-bottom: 0;
+    margin: 0 0 0 30px;
+    padding-bottom: 0;
+}
+
+.contact {
+    list-style-type: none;
+    Margin-top: 1%;
+    padding: 0;
+}
+
+.contact p {
+    display: flex;
+}
+
+.contact p img {
     max-width: 15px;
-    margin: 0 10px 0 0;
+    margin: 0 5px 0 0;
     padding-bottom: 0;
 }
 
@@ -229,7 +241,7 @@ img.logo {
         width: 100% !important;
     }
 
-    .social p {
+    .contact p {
         display: inline-block;
     }
 
@@ -269,7 +281,7 @@ img.logo {
         overflow: hidden;
     }
 
-    .social p {
+    .contact p {
         display: inline-block;
     }
 
