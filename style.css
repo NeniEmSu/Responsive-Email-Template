@@ -1,6 +1,14 @@
+body {
+    margin: 0;
+    padding: 0 15px;
+    background-image: url('top.png'), url('bottom.png ');
+    background-repeat: no-repeat;
+    background-position: right 25% top, left 25% bottom;
+    background-size: 400px, 420px;
+}
+
 .container {
-    Margin: 0 !important;
-    padding: 15px;
+    margin: 0 !important;
     background-color: #FFF;
 }
 
@@ -13,7 +21,7 @@
     width: 100%;
     background-color: #fff;
     max-width: 670px;
-    Margin: 0 auto;
+    margin: 0 auto;
 }
 
 table {
@@ -41,34 +49,25 @@ ul {
 }
 
 li {
-    Margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 hr {
     margin: 0;
-    border: gray 1px solid;
+    border: lightgray 1px solid;
 }
 
 .main-table-first {
     width: 100%;
     max-width: 610px;
-    Margin: 0 auto;
-    background-image: url('top.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 350px;
+    margin: 0 auto;
     border-radius: 6px;
-    margin-top: 25px;
 }
 
 .main-table-footer {
     width: 100%;
     max-width: 610px;
-    Margin: 0 auto;
-    background-image: url('bottom.png');
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 350px;
+    margin: 0 auto;
     border-radius: 6px;
     margin-top: 25px;
 }
@@ -100,7 +99,7 @@ hr {
 
 .center {
     display: table;
-    Margin: 0 auto;
+    margin: 0 auto;
 }
 
 img {
@@ -109,13 +108,13 @@ img {
 
 img.logo {
     float: left;
-    Margin-left: 5%;
+    margin-left: 5%;
     max-width: 150px !important;
 }
 
 #callout {
     float: right;
-    Margin: 4% 5% 2% 0;
+    margin: 4% 5% 2% 0;
     height: auto;
     overflow: hidden;
 }
@@ -126,7 +125,7 @@ img.logo {
 
 .social {
     list-style-type: none;
-    Margin-top: 1%;
+    margin-top: 1%;
     padding: 0;
 }
 
@@ -142,14 +141,14 @@ img.logo {
 
 .social p img {
     max-width: 40px;
-    Margin-bottom: 0;
+    margin-bottom: 0;
     margin: 0 0 0 30px;
     padding-bottom: 0;
 }
 
 .contact {
     list-style-type: none;
-    Margin-top: 1%;
+    margin-top: 1%;
     padding: 0;
 }
 
@@ -207,7 +206,7 @@ img.logo {
     font-size: 25px !important;
     font-weight: 600;
     line-height: 45px;
-    Margin: 12px 0 20px 0;
+    margin: 12px 0 20px 0;
     color: #4A4A4A;
 }
 
@@ -218,16 +217,6 @@ img.logo {
 }
 
 @media screen and (max-width: 400px) {
-
-    .main-table-first {
-        background-position: top center;
-        background-size: 200px;
-    }
-
-    .main-table-footer {
-        background-position: bottom center;
-        background-size: 200px;
-    }
 
     .h1 {
         font-size: 22px;
@@ -256,16 +245,6 @@ img.logo {
 }
 
 @media screen and (max-width:768px) {
-
-    .main-table-first {
-        background-position: top center;
-        background-size: 350px;
-    }
-
-    .main-table-footer {
-        background-position: bottom center;
-        background-size: 350px;
-    }
 
     img.logo {
         float: none !important;
