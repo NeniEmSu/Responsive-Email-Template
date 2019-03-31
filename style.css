@@ -207,6 +207,13 @@ img.logo {
 
 /*--- Media Queries --*/
 @media screen and (max-width: 400px) {
+
+    .main-table-first,
+    .main-table-footer {
+        background-position: center center;
+        background-size: 200px;
+    }
+
     .h1 {
         font-size: 22px;
     }
@@ -234,6 +241,13 @@ img.logo {
 }
 
 @media screen and (max-width:768px) {
+
+    .main-table-first,
+    .main-table-footer {
+        background-position: center;
+        background-size: 250px;
+    }
+
     img.logo {
         float: none !important;
         margin-left: 0% !important;
