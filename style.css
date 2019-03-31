@@ -205,12 +205,15 @@ img.logo {
     text-align: justify;
 }
 
-/*--- Media Queries --*/
 @media screen and (max-width: 400px) {
 
-    .main-table-first,
+    .main-table-first {
+        background-position: top center;
+        background-size: 200px;
+    }
+
     .main-table-footer {
-        background-position: center center;
+        background-position: bottom center;
         background-size: 200px;
     }
 
@@ -242,10 +245,14 @@ img.logo {
 
 @media screen and (max-width:768px) {
 
-    .main-table-first,
+    .main-table-first {
+        background-position: top center;
+        background-size: 350px;
+    }
+
     .main-table-footer {
-        background-position: center;
-        background-size: 250px;
+        background-position: bottom center;
+        background-size: 350px;
     }
 
     img.logo {
