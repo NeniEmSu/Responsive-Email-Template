@@ -6,18 +6,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
-    <link rel="stylesheet" href="style.css">
     <style type="text/css">
-        @media screen and (max-width: 400px) {
-            .main-table-first {
-                background-position: top center;
-                background-size: 200px;
-            }
+        body {
+            margin: 0;
+            padding: 0 15px;
+            background-image: url('top.png'), url('bottom.png ');
+            background-repeat: no-repeat;
+            background-position: right 30vw top, left 25vw bottom;
+            background-size: 400px, 420px;
+        }
 
-            .main-table-footer {
-                background-position: bottom center;
-                background-size: 200px;
-            }
+        .container {
+            margin: 0 !important;
+            background-color: #FFF;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .wrapper-inner {
+            width: 100%;
+            background-color: #fff;
+            max-width: 670px;
+            margin: 0 auto;
+        }
+
+        table {
+            border-spacing: 0;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        td {
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 0 0 20px 0;
+        }
+
+        hr {
+            margin: 0;
+            border: lightgray 1px solid;
+        }
+
+        .main-table-first {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+
+        .main-table-footer {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
+
+
+        .two-column {
+            text-align: center;
+            font-size: 0;
+            padding: 5px 0 10px 0;
+        }
+
+        .two-column .section {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .two-column .content {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .content {
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .center {
+            display: table;
+            margin: 0 auto;
+        }
+
+        img {
+            border: 0;
+        }
+
+        img.logo {
+            float: left;
+            margin-left: 5%;
+            max-width: 150px !important;
+        }
+
+        #callout {
+            float: right;
+            margin: 4% 5% 2% 0;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #callout img {
+            max-width: 40px;
+        }
+
+        .social {
+            list-style-type: none;
+            margin-top: 1%;
+            padding: 0;
+        }
+
+        .social p {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .social p {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .social p img {
+            max-width: 40px;
+            margin-bottom: 0;
+            margin: 0 0 0 30px;
+            padding-bottom: 0;
+        }
+
+        .contact {
+            list-style-type: none;
+            margin-top: 1%;
+            padding: 0;
+        }
+
+        .contact p {
+            display: flex;
+        }
+
+        .contact p img {
+            max-width: 15px;
+            margin: 0 5px 0 0;
+            padding-bottom: 0;
+        }
+
+        .main-table {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            background-color: #FFF;
+            border-radius: 6px;
+        }
+
+        .one-column .inner-td {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .inner-td {
+            padding: 10px;
+        }
+
+        .two-column img.logo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .two-column img.solar {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: -1.6rem;
+        }
+
+        .two-column .text {
+            padding: 10px 0;
+        }
+
+        .inner-bottom {
+            padding: 2px;
+        }
+
+        .h1 {
+            text-align: center !important;
+            font-size: 25px !important;
+            font-weight: 600;
+            line-height: 45px;
+            margin: 12px 0 20px 0;
+            color: #4A4A4A;
+        }
+
+        .inner-bottom p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 400px) {
 
             .h1 {
                 font-size: 22px;
@@ -34,23 +242,25 @@
             .contact p {
                 display: inline-block;
             }
+
+
         }
 
         @media screen and (min-width: 401px) and (max-width: 400px) {
+
             .two-column .column {
                 max-width: 50% !important;
             }
         }
 
         @media screen and (max-width:768px) {
-            .main-table-first {
-                background-position: top center;
-                background-size: 350px;
-            }
-
-            .main-table-footer {
-                background-position: bottom center;
-                background-size: 350px;
+            body {
+                margin: 0;
+                padding: 0 15px;
+                background-image: url('top.png'), url('bottom.png ');
+                background-repeat: no-repeat;
+                background-position: center top, center bottom;
+                background-size: 400px, 420px;
             }
 
             img.logo {
@@ -101,37 +311,32 @@
     </style>
 </head>
 
-<body>
+<body
+    style="margin: 0;padding: 0 15px;background-image: url(top.png), url(bottom.png );background-repeat: no-repeat;background-position: right 30vw top, left 25vw bottom;background-size: 400px, 420px;">
     <table cellpadding="0" cellspacing="0" border="0" class="container"
-        style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); padding: 15px; background-color: #FFF; Margin: 0;"
-        bgcolor="#FFF">
+        style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);background-color: #FFF;margin: 0 !important;">
         <table class="wrapper"
-            style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; table-layout: fixed;"
-            width="100%">
+            style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;table-layout: fixed;">
             <table cellpadding="0" cellspacing="0" border="0" class="wrapper-inner"
-                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; background-color: #fff; max-width: 670px; Margin: 0 auto;"
-                width="100%" bgcolor="#fff">
+                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;background-color: #fff;max-width: 670px;margin: 0 auto;">
                 <table class="main-table-first"
-                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; max-width: 610px; Margin: 0 auto; background-image: url('top.png'); background-repeat: no-repeat; background-position: right top; background-size: 350px; border-radius: 6px; margin-top: 25px;"
-                    width="100%" background="url('top.png')">
+                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;max-width: 610px;margin: 0 auto;border-radius: 6px;">
                     <tr>
-                        <td class="two-column" style="text-align: center; font-size: 0; padding: 5px 0 10px 0;"
-                            align="center">
+                        <td class="two-column" style="padding: 5px 0 10px 0;text-align: center;font-size: 0;">
                             <div class="section"
-                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
+                                style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                                     <tr>
                                         <td class="inner-td" style="padding: 10px;">
                                             <table class="content"
-                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; padding-top: 20px; font-size: 16px; line-height: 20px; text-align: justify;"
-                                                width="100%" align="justify">
+                                                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
                                                 <tr>
                                                     <td align="center" style="padding: 0;">
                                                         <img src="Untitled-5.png"
                                                             alt="Levelsun Logo СОНЦЕ ПРАЦЮЕ НА ТЕБЕ"
                                                             title="Levelsun СОНЦЕ ПРАЦЮЕ НА ТЕБЕ" class="logo"
-                                                            style="border: 0; float: left; Margin-left: 5%; width: 100%; height: auto; max-width: 150px;">
+                                                            style="border: 0;float: left;margin-left: 5%;width: 100%;max-width: 150px !important;height: auto;">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -140,20 +345,19 @@
                                 </table>
                             </div>
                             <div class="section"
-                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
+                                style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                                     <tr>
                                         <td class="inner-td" style="padding: 10px;">
                                             <table class="content"
-                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; padding-top: 20px; font-size: 16px; line-height: 20px; text-align: justify;"
-                                                width="100%" align="justify">
+                                                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
                                                 <tr>
                                                     <td align="center" style="padding: 0;">
                                                         <img class="solar" src="Untitled-3.png"
                                                             title="Levelsuns 3 main Solar panels"
                                                             alt="Levelsuns 3 main Solar panels"
-                                                            style="border: 0; width: 100%; max-width: 600px; height: auto; margin-bottom: -1.6rem;">
+                                                            style="border: 0;width: 100%;max-width: 600px;height: auto;margin-bottom: -1.6rem;">
                                                     </td>
                                                 </tr>
                                             </table>
@@ -161,23 +365,22 @@
                                     </tr>
                                 </table>
                             </div>
-                            <hr style="margin: 0; border: gray 1px solid;">
+                            <hr style="margin: 0;border: lightgray 1px solid;">
                         </td>
                     </tr>
                 </table>
                 <table class="main-table"
-                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; max-width: 610px; margin: 0 auto; background-color: #FFF; border-radius: 6px;"
-                    width="100%" bgcolor="#FFF">
+                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;border-radius: 6px;">
                     <tr>
                         <td class="one-column" style="padding: 0;">
                             <table width="100%"
-                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                                 <tr>
                                     <td class="inner-bottom" style="padding: 2px;">
                                         <p class="h1"
-                                            style="margin: 0; font-weight: 600; Margin: 12px 0 20px 0; color: #4A4A4A; line-height: 24px; text-align: center; font-size: 25px;">
+                                            style="margin: 12px 0 20px 0;font-weight: 600;line-height: 24px;color: #4A4A4A;font-size: 25px !important;text-align: center !important;">
                                             Дорогі наші Клієнти&excl;</p>
-                                        <p style="margin: 0; font-size: 16px; line-height: 24px; text-align: justify;">
+                                        <p style="margin: 0;font-size: 16px;line-height: 24px;text-align: justify;">
                                             Компанія &laquo;LevelSun&raquo; &hyphen; офіційний дилер кращих торгівельних
                                             марок
                                             по
@@ -216,40 +419,37 @@
                     </tr>
                 </table>
                 <table class="main-table-footer"
-                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; max-width: 610px; Margin: 0 auto; background-image: url('bottom.png'); background-repeat: no-repeat; background-position: bottom left; background-size: 350px; border-radius: 6px; margin-top: 25px;"
-                    width="100%" background="url('bottom.png')">
+                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;max-width: 610px;margin: 0 auto;border-radius: 6px;margin-top: 25px;">
                     <tr>
-                        <td class="two-column" style="text-align: center; font-size: 0; padding: 5px 0 10px 0;"
-                            align="center">
-                            <hr style="margin: 0; border: gray 1px solid;">
+                        <td class="two-column" style="padding: 5px 0 10px 0;text-align: center;font-size: 0;">
+                            <hr style="margin: 0;border: lightgray 1px solid;">
                             <div class="section"
-                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
+                                style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                                     <tr>
                                         <td class="inner-td" style="padding: 10px;">
                                             <table class="content"
-                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; padding-top: 20px; font-size: 16px; line-height: 20px; text-align: justify;"
-                                                width="100%" align="justify">
+                                                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
                                                 <tr>
                                                     <td align="center" style="padding: 0;">
                                                         <div class="contact"
-                                                            style="list-style-type: none; Margin-top: 1%; padding: 0;">
-                                                            <p style="margin: 0; display: flex; margin-bottom: 20px;"><a
+                                                            style="list-style-type: none;margin-top: 1%;padding: 0;">
+                                                            <p style="margin-bottom: 20px;margin: 0;display: flex;"><a
                                                                     title="Call Us"
-                                                                    style="color: rgba(0, 0, 0, 0.6); text-decoration: none;"
+                                                                    style="text-decoration: none;color: rgba(0, 0, 0, 0.6);"
                                                                     href="tel:+380971103030"><img
                                                                         src="icons8-ringer-volume-24.png"
                                                                         alt="Phone Icon"
-                                                                        style="border: 0; max-width: 15px; margin: 0 5px 0 0; padding-bottom: 0;">
+                                                                        style="border: 0;max-width: 15px;margin: 0 5px 0 0;padding-bottom: 0;">
                                                                     +380 &lpar;97&rpar; 110
                                                                     30 30</a></p>
-                                                            <p style="margin: 0; display: flex;"><a title="Go to site"
-                                                                    style="color: rgba(0, 0, 0, 0.6); text-decoration: none;"
+                                                            <p style="margin: 0;display: flex;"><a title="Go to site"
+                                                                    style="text-decoration: none;color: rgba(0, 0, 0, 0.6);"
                                                                     href="
                                                                     http://levelsun.com.ua" target="_blank"><img
                                                                         src="icons8-globe-earth-32.png" alt="Globe Icon"
-                                                                        style="border: 0; max-width: 15px; margin: 0 5px 0 0; padding-bottom: 0;">
+                                                                        style="border: 0;max-width: 15px;margin: 0 5px 0 0;padding-bottom: 0;">
                                                                     levelsun.com.ua</a></p>
                                                         </div>
                                                     </td>
@@ -260,62 +460,65 @@
                                 </table>
                             </div>
                             <div class="section"
-                                style="width: 100%; max-width: 300px; display: inline-block; vertical-align: top;">
+                                style="width: 100%;max-width: 300px;display: inline-block;vertical-align: top;">
                                 <table width="100%"
-                                    style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                                    style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                                     <tr>
                                         <td class="inner-td" style="padding: 10px;">
                                             <table class="content"
-                                                style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6); width: 100%; padding-top: 20px; font-size: 16px; line-height: 20px; text-align: justify;"
-                                                width="100%" align="justify">
+                                                style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);width: 100%;padding-top: 20px;font-size: 16px;line-height: 20px;text-align: justify;">
                                                 <tr>
                                                     <td align="center" style="padding: 0;">
                                                         <tagle cellpadding="0" cellspacing="0" border="0" id="callout"
-                                                            style="float: right; Margin: 4% 5% 2% 0; height: auto; overflow: hidden;">
+                                                            style="float: right;margin: 4% 5% 2% 0;height: auto;overflow: hidden;">
+                                                        </tagle>
+                                                    </td>
+                                                </tr>
                                                 <tr class="social"
-                                                    style="list-style-type: none; Margin-top: 1%; padding: 0;">
+                                                    style="list-style-type: none;margin-top: 1%;padding: 0;">
                                                     <td align="center" style="padding: 0;">
-                                                        <p align="center"
-                                                            style="display: inline-block; margin: 0 auto;"><a
-                                                                href="https://www.facebook.com/levelsun.te/"
+                                                        <p align="center" style="margin: 0 auto;display: inline-block;">
+                                                            <a href="https://www.facebook.com/levelsun.te/"
                                                                 target="_blank" title="Facebook Icon"
                                                                 style="color: rgba(0, 0, 0, 0.6);"><img
                                                                     src="facebook.png" alt="Facebook icon"
-                                                                    style="border: 0; Margin-bottom: 0; margin: 0 0 0 30px; padding-bottom: 0; max-width: 40px;"></a>
+                                                                    style="border: 0;max-width: 40px;margin-bottom: 0;margin: 0 0 0 30px;padding-bottom: 0;"></a>
                                                         </p>
-                                                        <p style="display: inline-block; margin: 0 auto;"><a
+                                                        <p style="margin: 0 auto;display: inline-block;"><a
                                                                 href="https://www.instagram.com/levelsun.te/"
                                                                 target="_blank" title="Instagram Icon"
                                                                 style="color: rgba(0, 0, 0, 0.6);"><img
                                                                     src="instagram.png" alt="Istagram icon"
-                                                                    style="border: 0; Margin-bottom: 0; margin: 0 0 0 30px; padding-bottom: 0; max-width: 40px;"></a>
+                                                                    style="border: 0;max-width: 40px;margin-bottom: 0;margin: 0 0 0 30px;padding-bottom: 0;"></a>
                                                         </p>
 
-                                                        <p style="display: inline-block; margin: 0 auto;"><a href="#"
+                                                        <p style="margin: 0 auto;display: inline-block;"><a href="#"
                                                                 target="_blank" title="Linkedin tile"
                                                                 style="color: rgba(0, 0, 0, 0.6);"><img
                                                                     src="linkedin.png" alt="linkedin icon"
-                                                                    style="border: 0; Margin-bottom: 0; margin: 0 0 0 30px; padding-bottom: 0; max-width: 40px;"></a>
+                                                                    style="border: 0;max-width: 40px;margin-bottom: 0;margin: 0 0 0 30px;padding-bottom: 0;"></a>
                                                         </p>
                                                     </td>
                                                 </tr>
-                                                </tagle>
+
+                                            </table>
                                         </td>
                                     </tr>
                                 </table>
+                            </div>
                         </td>
                     </tr>
                 </table>
-                </div>
-                </td>
-                </tr>
+
+
+
                 <tr>
                     <td style="padding: 0;">
                         <table width="100%"
-                            style="border-spacing: 0; font-family: 'Roboto', sans-serif; color: rgba(0, 0, 0, 0.6);">
+                            style="border-spacing: 0;font-family: 'Roboto', sans-serif;color: rgba(0, 0, 0, 0.6);">
                             <tr>
                                 <td align="center" style="padding: 0;">
-                                    <p style="margin: 0; margin-bottom: 40px;">Ви можете <a href="#"
+                                    <p style="margin-bottom: 40px;margin: 0;">Ви можете <a href="#"
                                             style="color: rgba(0, 0, 0, 0.6);">відписатися від Email
                                             розсилки</a></p>
                                 </td>
@@ -328,7 +531,7 @@
         </table>
     </table>
     <br>
-    </table>
+
 </body>
 
 </html>

@@ -3,7 +3,7 @@ body {
     padding: 0 15px;
     background-image: url('top.png'), url('bottom.png ');
     background-repeat: no-repeat;
-    background-position: right 25% top, left 25% bottom;
+    background-position: right 30vw top, left 25vw bottom;
     background-size: 400px, 420px;
 }
 
@@ -245,6 +245,14 @@ img.logo {
 }
 
 @media screen and (max-width:768px) {
+    body {
+        margin: 0;
+        padding: 0 15px;
+        background-image: url('top.png'), url('bottom.png ');
+        background-repeat: no-repeat;
+        background-position: center top, center bottom;
+        background-size: 400px, 420px;
+    }
 
     img.logo {
         float: none !important;

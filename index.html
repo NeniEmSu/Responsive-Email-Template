@@ -7,6 +7,309 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0 15px;
+            background-image: url('top.png'), url('bottom.png ');
+            background-repeat: no-repeat;
+            background-position: right 30vw top, left 25vw bottom;
+            background-size: 400px, 420px;
+        }
+
+        .container {
+            margin: 0 !important;
+            background-color: #FFF;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .wrapper-inner {
+            width: 100%;
+            background-color: #fff;
+            max-width: 670px;
+            margin: 0 auto;
+        }
+
+        table {
+            border-spacing: 0;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        td {
+            padding: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 0 0 20px 0;
+        }
+
+        hr {
+            margin: 0;
+            border: lightgray 1px solid;
+        }
+
+        .main-table-first {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+
+        .main-table-footer {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            border-radius: 6px;
+            margin-top: 25px;
+        }
+
+
+        .two-column {
+            text-align: center;
+            font-size: 0;
+            padding: 5px 0 10px 0;
+        }
+
+        .two-column .section {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .two-column .content {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .content {
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .center {
+            display: table;
+            margin: 0 auto;
+        }
+
+        img {
+            border: 0;
+        }
+
+        img.logo {
+            float: left;
+            margin-left: 5%;
+            max-width: 150px !important;
+        }
+
+        #callout {
+            float: right;
+            margin: 4% 5% 2% 0;
+            height: auto;
+            overflow: hidden;
+        }
+
+        #callout img {
+            max-width: 40px;
+        }
+
+        .social {
+            list-style-type: none;
+            margin-top: 1%;
+            padding: 0;
+        }
+
+        .social p {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .social p {
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .social p img {
+            max-width: 40px;
+            margin-bottom: 0;
+            margin: 0 0 0 30px;
+            padding-bottom: 0;
+        }
+
+        .contact {
+            list-style-type: none;
+            margin-top: 1%;
+            padding: 0;
+        }
+
+        .contact p {
+            display: flex;
+        }
+
+        .contact p img {
+            max-width: 15px;
+            margin: 0 5px 0 0;
+            padding-bottom: 0;
+        }
+
+        .main-table {
+            width: 100%;
+            max-width: 610px;
+            margin: 0 auto;
+            background-color: #FFF;
+            border-radius: 6px;
+        }
+
+        .one-column .inner-td {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+        }
+
+        .inner-td {
+            padding: 10px;
+        }
+
+        .two-column img.logo {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+        .two-column img.solar {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: -1.6rem;
+        }
+
+        .two-column .text {
+            padding: 10px 0;
+        }
+
+        .inner-bottom {
+            padding: 2px;
+        }
+
+        .h1 {
+            text-align: center !important;
+            font-size: 25px !important;
+            font-weight: 600;
+            line-height: 45px;
+            margin: 12px 0 20px 0;
+            color: #4A4A4A;
+        }
+
+        .inner-bottom p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 400px) {
+
+            .h1 {
+                font-size: 22px;
+            }
+
+            .two-column .column {
+                max-width: 100% !important;
+            }
+
+            .two-column img {
+                width: 100% !important;
+            }
+
+            .contact p {
+                display: inline-block;
+            }
+
+
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 400px) {
+
+            .two-column .column {
+                max-width: 50% !important;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            body {
+                margin: 0;
+                padding: 0 15px;
+                background-image: url('top.png'), url('bottom.png ');
+                background-repeat: no-repeat;
+                background-position: center top, center bottom;
+                background-size: 400px, 420px;
+            }
+
+            img.logo {
+                float: none !important;
+                margin-left: 0% !important;
+                max-width: 200px !important;
+            }
+
+            #callout {
+                float: none !important;
+                margin: 0% 0% 0% 0;
+                height: auto;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .contact p {
+                display: inline-block;
+            }
+
+            #callout img {
+                max-width: 26px !important;
+            }
+
+            .two-column .section {
+                width: 100% !important;
+                max-width: 100% !important;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .two-column img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            img.img-responsive {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+            }
+
+            .content {
+                width: 100%;
+                padding-top: 0px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
