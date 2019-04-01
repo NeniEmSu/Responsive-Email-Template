@@ -89,7 +89,7 @@ hr {
 .two-column .content {
     font-size: 16px;
     line-height: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .content {
@@ -173,7 +173,7 @@ img.logo {
 .one-column .inner-td {
     font-size: 16px;
     line-height: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .inner-td {
@@ -213,7 +213,7 @@ img.logo {
 .inner-bottom p {
     font-size: 16px;
     line-height: 24px;
-    text-align: justify;
+    text-align: left;
 }
 
 @media screen and (max-width: 400px) {
